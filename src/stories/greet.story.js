@@ -9,11 +9,12 @@ import { expect } from 'chai';
 import Greeting from '../components/Greeting';
 
 
-const store = configureStore();
+let store = configureStore();
 configure({ adapter: new Adapter() });
 
 storiesOf('Greetings with Redux', module)    
     .add('User has no greeting', () => {
+        store = configureStore();
         const storyWithProvider = (
             <Provider store={store}>
                 <Greeting />

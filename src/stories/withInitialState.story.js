@@ -28,7 +28,7 @@ storiesOf('Redux With Initial State', module)
         specs(() => describe('No greeting', function () {
             it('Should have no greeting', function () {
                 const output = mount(storyWithProvider);
-                expect(output.text()).to.contains('No greeting :S');
+                expect(output.text()).to.contains('No messages');
             });
         }));
         return storyWithProvider;
