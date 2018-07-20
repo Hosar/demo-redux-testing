@@ -1,0 +1,23 @@
+{
+    "presets": [
+        [
+            "env",
+            {
+                "targets": {
+                    "node": true
+                }
+            }
+        ],
+        "es2015",
+        "stage-3",
+        "react"
+    ],
+    "plugins": [
+        "transform-decorators-legacy",
+        "transform-decorators",
+        "transform-object-rest-spread"
+    ],
+    "ignore": [
+        "*.css"
+    ]
+}
